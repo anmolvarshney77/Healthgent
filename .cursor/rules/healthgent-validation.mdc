@@ -1,0 +1,18 @@
+---
+description: Mandatory validation checklist before answering patient/fixture clinical questions (Healthgent).
+alwaysApply: true
+---
+
+# Healthgent validation guardrails
+
+Before answering anything tied to repo patients, `clinical-notes/`, or `kb/patients/`, satisfy **[`docs/agent-validation-guardrails.md`](docs/agent-validation-guardrails.md)** end-to-end. Compressed PASS checklist:
+
+1. **Grounding:** Trace each factual claim to `clinical-notes/*.json` fields **or** an explicitly loaded `kb/patients/**` section; otherwise omit or say *not in fixtures*.
+2. **Authority:** JSON beats Markdown KB on conflict; reload canonical JSON rather than trusting stale KB.
+3. **Time:** Speak only to encounters/dates present—fixtures mainly hold **one visit per patient** unless documented otherwise.
+4. **Demo frame:** Label data synthetic/demo; output not clinical advice; distinguish quoted chart text from generic reasoning.
+5. **Safety flags:** Surface documented flags/instructions only; don’t invent thresholds or urgency scenarios absent from sources.
+6. **Tools:** With MCP available—follow MCP-first routing and **`validate_clinical_note`** before heavy synthesis or external POST ([`docs/agent-configuration.md`](docs/agent-configuration.md)).
+7. **Stop:** On ambiguity, stale KB, or missing fixtures—stop, note validation failure, ask for filename/MRN/reload instead of guessing.
+
+Do not fabricate visits, meds, providers, labs, or diagnoses.

@@ -1,0 +1,11 @@
+{
+  "name": "healthgent",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "kb-pdf": "node scripts/export-kb-pdf.mjs"
+  },
+  "devDependencies": {
+    "md-to-pdf": "^5.2.4"
+  }
+}
