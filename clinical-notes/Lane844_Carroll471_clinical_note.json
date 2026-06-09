@@ -1,0 +1,94 @@
+{
+  "documentType": "clinical_note",
+  "schemaVersion": "1.0",
+  "patient": {
+    "fullName": "Lane844 Carroll471",
+    "dateOfBirth": "2007-07-19",
+    "sexAtBirth": "male",
+    "ageYears": 18,
+    "mrn": "MRN-HG-LC-002",
+    "guardian": null
+  },
+  "encounter": {
+    "encounterId": "ENC-LC-2026-0510",
+    "dateTime": "2026-05-07T14:40:00-07:00",
+    "type": "office_visit",
+    "setting": "adolescent_primary_care",
+    "chiefComplaint": "New-onset anxiety symptoms affecting sleep and concentration before finals",
+    "provider": {
+      "name": "Dr. Sample Provider",
+      "department": "Family Medicine"
+    },
+    "duration": "30 minutes"
+  },
+  "clinicalNote": {
+    "subjective": "18-year-old male presents with new-onset anxiety symptoms affecting sleep and concentration before finals. Reports increased worry, difficulty sleeping, and low mood. Episodic cannabis use disclosed. Denies SI/HI.",
+    "objective": "BP 118/74 mmHg, HR 88 bpm, RR 16, Temp 36.9°C, SpO2 99%. Weight 68.0 kg, Height 175 cm. PHQ-9: 11 (moderate depression). GAD-7: 13 (moderate anxiety). SI/HI negative on structured assessment.",
+    "assessment": [
+      {
+        "problem": "Generalized anxiety disorder",
+        "status": "active",
+        "icd10": "F41.1"
+      },
+      {
+        "problem": "Major depressive disorder, moderate episode",
+        "status": "active",
+        "icd10": "F32.1"
+      },
+      {
+        "problem": "Cannabis use, episodic",
+        "status": "active_counseling",
+        "icd10": "F12.10"
+      }
+    ],
+    "plan": "Begin SSRI trial (sertraline titration as documented) with counseling on activation side effects and serotonin syndrome education. Refer to campus counseling / CBT. Reduce caffeine; minimize cannabis during SSRI initiation. PHQ-9/GAD-7 in 4 weeks; urgent follow-up sooner for worsening mood or SI. Discussed crisis resources.",
+    "patientInstructions": "Call crisis line or go to ED for suicidal thoughts, inability to care for self, or panic attacks with chest pain/syncope. Do not stop SSRI abruptly."
+  },
+  "structuredData": {
+    "allergies": [
+      { "substance": "NKDA", "reaction": "", "severity": "" }
+    ],
+    "medications": [
+      {
+        "name": "sertraline",
+        "dose": "25 mg daily x 7 days then 50 mg daily",
+        "route": "PO",
+        "frequency": "daily",
+        "status": "new",
+        "indication": "anxiety/depression"
+      }
+    ],
+    "conditions": [
+      { "name": "Generalized anxiety disorder", "icd10": "F41.1", "clinicalStatus": "active" },
+      { "name": "Major depressive disorder, moderate", "icd10": "F32.1", "clinicalStatus": "active" },
+      { "name": "Cannabis use disorder mild (under evaluation)", "icd10": "F12.10", "clinicalStatus": "active" }
+    ],
+    "vitals": {
+      "bloodPressureSystolic": 118,
+      "bloodPressureDiastolic": 74,
+      "heartRate": 88,
+      "respiratoryRate": 16,
+      "temperatureC": 36.9,
+      "oxygenSaturationPercent": 99
+    },
+    "labs": [],
+    "labsOrdered": [],
+    "imaging": [],
+    "referrals": [
+      { "type": "behavioral_health", "reason": "CBT", "urgency": "routine" }
+    ],
+    "screeningScores": [
+      { "instrument": "PHQ-9", "score": 11, "date": "2026-05-07" },
+      { "instrument": "GAD-7", "score": 13, "date": "2026-05-07" }
+    ]
+  },
+  "agentContext": {
+    "oneLineSummary": "18M with moderate depression/anxiety on new SSRI; substance use and caffeine counseling documented.",
+    "keyFactsForTools": [
+      "SI/HI negative today — repeat safety assessment at follow-up.",
+      "Drug interaction check: sertraline + THC/alcohol sedation risk.",
+      "Track PHQ-9/GAD-7 trend for dose adjustments."
+    ],
+    "safetyFlags": ["behavioral_health_follow_up_required"]
+  }
+}
