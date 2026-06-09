@@ -1,0 +1,115 @@
+{
+  "documentType": "clinical_note",
+  "schemaVersion": "1.0",
+  "patient": {
+    "fullName": "Tamera164 Wisozk929",
+    "dateOfBirth": "1980-02-03",
+    "sexAtBirth": "female",
+    "ageYears": 46,
+    "mrn": "MRN-HG-TW-005",
+    "guardian": null
+  },
+  "encounter": {
+    "encounterId": "ENC-TW-2026-0510",
+    "dateTime": "2026-05-05T11:20:00-07:00",
+    "type": "office_visit",
+    "setting": "primary_care_womens_health",
+    "chiefComplaint": "Type 2 diabetes follow-up; intermittent numbness in feet",
+    "provider": {
+      "name": "Dr. Sample Provider",
+      "department": "Family Medicine"
+    },
+    "duration": "35 minutes"
+  },
+  "clinicalNote": {
+    "subjective": "46-year-old female presents for T2DM follow-up reporting intermittent numbness in feet bilaterally, worse at night. Currently on metformin and atorvastatin. Reports adherence to medications. Denies chest pain, dyspnea, or urinary symptoms.",
+    "objective": "BP 126/78 mmHg, HR 74 bpm, RR 14, Temp 36.6°C, SpO2 98%. Weight 86.0 kg, Height 166 cm. Monofilament testing: reduced bilateral distal sensation. DP pulses palpable bilateral. Skin intact, no ulcerations. HbA1c 7.8% (2026-05-01), eGFR 82 mL/min/1.73m2, LDL-C 96 mg/dL.",
+    "assessment": [
+      {
+        "problem": "Type 2 diabetes mellitus",
+        "status": "suboptimally_controlled_improving",
+        "icd10": "E11.9"
+      },
+      {
+        "problem": "Diabetic peripheral neuropathy, suspected early",
+        "status": "active",
+        "icd10": "E11.42"
+      },
+      {
+        "problem": "Obesity",
+        "status": "active",
+        "icd10": "E66.9"
+      }
+    ],
+    "plan": "Continue metformin; add empagliflozin with counseling (hydration, genital yeast infection warning signs). Reinforce MNT and activity. Repeat HbA1c in 3 months; annual labs scheduled. Podiatry if foot lesion; ophthalmology referral provided (screening overdue).",
+    "patientInstructions": "Daily foot checks; seek care for redness, drainage, or open sore. Monitor for dehydration/UTI symptoms on SGLT2 inhibitor."
+  },
+  "structuredData": {
+    "allergies": [
+      { "substance": "NKDA", "reaction": "", "severity": "" }
+    ],
+    "medications": [
+      {
+        "name": "metformin",
+        "dose": "1000 mg",
+        "route": "PO",
+        "frequency": "BID",
+        "status": "active",
+        "indication": "type 2 diabetes"
+      },
+      {
+        "name": "empagliflozin",
+        "dose": "10 mg",
+        "route": "PO",
+        "frequency": "daily",
+        "status": "new",
+        "indication": "type 2 diabetes / cardiorenal risk reduction"
+      },
+      {
+        "name": "atorvastatin",
+        "dose": "40 mg",
+        "route": "PO",
+        "frequency": "daily",
+        "status": "active",
+        "indication": "dyslipidemia"
+      }
+    ],
+    "conditions": [
+      { "name": "Type 2 diabetes mellitus without complications", "icd10": "E11.9", "clinicalStatus": "active" },
+      { "name": "Type 2 diabetes with diabetic polyneuropathy", "icd10": "E11.42", "clinicalStatus": "active" },
+      { "name": "Obesity", "icd10": "E66.9", "clinicalStatus": "active" }
+    ],
+    "vitals": {
+      "bloodPressureSystolic": 126,
+      "bloodPressureDiastolic": 78,
+      "heartRate": 74,
+      "respiratoryRate": 14,
+      "temperatureC": 36.6,
+      "oxygenSaturationPercent": 98
+    },
+    "labs": [
+      { "test": "HbA1c", "value": 7.8, "unit": "%", "date": "2026-05-01" },
+      { "test": "eGFR", "value": 82, "unit": "mL/min/1.73m2", "date": "2026-05-01" },
+      { "test": "LDL-C", "value": 96, "unit": "mg/dL", "date": "2026-05-01" }
+    ],
+    "labsOrdered": [
+      { "test": "hba1c", "priority": "routine", "notes": "due in 3 months" },
+      { "test": "cmp", "priority": "routine", "notes": "due in 3 months" },
+      { "test": "lipid_panel", "priority": "routine", "notes": "due in 6 months" }
+    ],
+    "imaging": [],
+    "referrals": [
+      { "type": "ophthalmology", "reason": "diabetic_retinopathy_screening_overdue", "urgency": "routine" }
+    ],
+    "screeningScores": []
+  },
+  "agentContext": {
+    "oneLineSummary": "46F T2DM with rising neuropathy findings; intensified therapy with SGLT2i; labs and eye care coordination needed.",
+    "keyFactsForTools": [
+      "eGFR checked — SGLT2 contraindications must be monitored ongoing.",
+      "Neuropathy screening abnormal — ulcer prevention counseling documented.",
+      "Polypharmacy: statin + metformin + SGLT2 — renal/hepatic monitoring alignment."
+    ],
+    "safetyFlags": ["diabetes_foot_risk", "new_high_risk_medication_class"]
+  }
+}
