@@ -1,0 +1,84 @@
+{
+  "documentType": "clinical_note",
+  "schemaVersion": "1.0",
+  "patient": {
+    "fullName": "Jimmie93 Waelchi213",
+    "dateOfBirth": "2014-10-23",
+    "sexAtBirth": "male",
+    "ageYears": 11,
+    "mrn": "MRN-HG-JW-004",
+    "guardian": {
+      "relationship": "father",
+      "contactPhone": "+1-555-0104"
+    }
+  },
+  "encounter": {
+    "encounterId": "ENC-JW-2026-0510",
+    "dateTime": "2026-05-09T16:30:00-07:00",
+    "type": "office_visit",
+    "setting": "pediatric_primary_care",
+    "chiefComplaint": "Right ankle injury during soccer — swelling and difficulty bearing weight",
+    "provider": {
+      "name": "Dr. Sample Provider",
+      "department": "Pediatrics"
+    },
+    "duration": "20 minutes"
+  },
+  "clinicalNote": {
+    "subjective": "11-year-old male presents with right ankle injury sustained during soccer. Reports swelling and difficulty bearing weight. No prior ankle injuries. Guardian present.",
+    "objective": "HR 84 bpm, RR 18, Temp 36.7°C, SpO2 99%. Weight 38.5 kg, Height 148 cm. Right ankle: lateral swelling, tenderness over ATFL, no fibula point tenderness. Ottawa ankle rules negative for fracture. X-ray right ankle: no acute fracture or dislocation.",
+    "assessment": [
+      {
+        "problem": "Right lateral ankle sprain (grade likely 1-2)",
+        "status": "acute",
+        "icd10": "S93.401A"
+      }
+    ],
+    "plan": "X-ray right ankle — no fracture. PRICE, ace wrap, crutches partial weight-bearing as tolerated 48-72h then gradual return. NSAIDs as above. Home exercises handout for ROM beginning day 3-5 if improving. RTC if inability to bear weight after 5-7 days, numbness, or recurrent instability.",
+    "patientInstructions": "Avoid soccer until pain-free with normal gait and single-leg hop test cleared by clinician."
+  },
+  "structuredData": {
+    "allergies": [
+      { "substance": "ibuprofen", "reaction": "GI upset only — tolerated with food", "severity": "mild" }
+    ],
+    "medications": [
+      {
+        "name": "ibuprofen",
+        "dose": "per pediatric dosing calculator weight-based",
+        "route": "PO",
+        "frequency": "every 8 hours with food x 3-5 days",
+        "status": "short_course",
+        "indication": "pain/inflammation ankle sprain"
+      }
+    ],
+    "conditions": [
+      { "name": "Sprain of right ankle, initial encounter", "icd10": "S93.401A", "clinicalStatus": "active" }
+    ],
+    "vitals": {
+      "heartRate": 84,
+      "respiratoryRate": 18,
+      "temperatureC": 36.7,
+      "oxygenSaturationPercent": 99
+    },
+    "labs": [],
+    "labsOrdered": [],
+    "imaging": [
+      {
+        "study": "XR ankle right",
+        "resultSummary": "No acute fracture or dislocation",
+        "dateTime": "2026-05-09T17:05:00-07:00"
+      }
+    ],
+    "referrals": [],
+    "screeningScores": []
+  },
+  "agentContext": {
+    "oneLineSummary": "11M acute lateral ankle sprain; XR negative; conservative management and RTP precautions documented.",
+    "keyFactsForTools": [
+      "Growth plate injury risk — XR negative reduces fracture concern but clinical follow-up for persistent symptoms.",
+      "NSAID 'allergy' mild GI only — monitor tolerance; currently prescribed with food instructions.",
+      "Return-to-play criteria should reference pain-free gait and functional testing."
+    ],
+    "safetyFlags": ["acute_musculoskeletal_injury_pediatric"]
+  }
+}

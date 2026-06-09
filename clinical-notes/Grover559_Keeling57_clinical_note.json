@@ -1,0 +1,101 @@
+{
+  "documentType": "clinical_note",
+  "schemaVersion": "1.0",
+  "patient": {
+    "fullName": "Grover559 Keeling57",
+    "dateOfBirth": "2013-12-10",
+    "sexAtBirth": "male",
+    "ageYears": 12,
+    "mrn": "MRN-HG-GK-003",
+    "guardian": {
+      "relationship": "mother",
+      "contactPhone": "+1-555-0103"
+    }
+  },
+  "encounter": {
+    "encounterId": "ENC-GK-2026-0510",
+    "dateTime": "2026-05-06T10:00:00-07:00",
+    "type": "office_visit",
+    "setting": "pediatric_primary_care",
+    "chiefComplaint": "Persistent asthma symptoms with nighttime cough during pollen season",
+    "provider": {
+      "name": "Dr. Sample Provider",
+      "department": "Pediatrics"
+    },
+    "duration": "25 minutes"
+  },
+  "clinicalNote": {
+    "subjective": "12-year-old male with known moderate persistent asthma presents with increased nighttime cough and daytime symptoms during pollen season. Guardian reports worsening despite current controller therapy. Albuterol use increased to several times per week.",
+    "objective": "HR 92 bpm, RR 22, Temp 37.0°C, SpO2 97%. Weight 42.0 kg, Height 152 cm. Mild expiratory wheeze on auscultation. Peak flow pre-bronchodilator 82% personal best; post-albuterol 95%; bronchodilator response positive. Spacer technique reviewed.",
+    "assessment": [
+      {
+        "problem": "Asthma, persistent moderate",
+        "status": "partially_controlled_seasonal_exacerbation",
+        "icd10": "J45.40"
+      },
+      {
+        "problem": "Allergic rhinitis, seasonal",
+        "status": "active",
+        "icd10": "J30.2"
+      }
+    ],
+    "plan": "Optimize controller (fluticasone MDI via spacer per plan); reviewed spacer technique. Asthma action plan for school. Continue albuterol PRN; urgent care thresholds documented (SpO2 <94%, peak flow <50% personal best). Follow-up 6 weeks or sooner if exacerbation. Consider allergy testing referral if recurrent symptoms.",
+    "patientInstructions": "Use spacer with every ICS dose; rinse mouth after. Track peak flow mornings for one week and bring log."
+  },
+  "structuredData": {
+    "allergies": [
+      { "substance": "environmental_pollen", "reaction": "respiratory_exacerbation", "severity": "moderate" },
+      { "substance": "NKFA", "reaction": "", "severity": "" }
+    ],
+    "medications": [
+      {
+        "name": "fluticasone propionate MDI",
+        "dose": "per weight-based guideline — clinic adjusted upward",
+        "route": "inhaled",
+        "frequency": "BID",
+        "status": "active_dose_change",
+        "indication": "asthma controller"
+      },
+      {
+        "name": "albuterol MDI",
+        "dose": "2 puffs",
+        "route": "inhaled",
+        "frequency": "PRN",
+        "status": "active",
+        "indication": "bronchospasm"
+      },
+      {
+        "name": "cetirizine",
+        "dose": "10 mg",
+        "route": "PO",
+        "frequency": "daily PRN",
+        "status": "active",
+        "indication": "allergic rhinitis"
+      }
+    ],
+    "conditions": [
+      { "name": "Moderate persistent asthma", "icd10": "J45.40", "clinicalStatus": "active" },
+      { "name": "Seasonal allergic rhinitis", "icd10": "J30.2", "clinicalStatus": "active" }
+    ],
+    "vitals": {
+      "heartRate": 92,
+      "respiratoryRate": 22,
+      "temperatureC": 37.0,
+      "oxygenSaturationPercent": 97
+    },
+    "labs": [],
+    "labsOrdered": [],
+    "imaging": [],
+    "referrals": [],
+    "screeningScores": []
+  },
+  "agentContext": {
+    "oneLineSummary": "12M asthma moderate persistent with seasonal worsening; ICS intensified, bronchodilator response documented.",
+    "keyFactsForTools": [
+      "Peak flow monitoring requested — parse trends for control assessment.",
+      "School action plan present — surface emergency thresholds when relevant.",
+      "Steroid inhaler dose changed — verify pediatric dosing bounds vs weight."
+    ],
+    "safetyFlags": ["pediatric_respiratory_condition"]
+  }
+}
