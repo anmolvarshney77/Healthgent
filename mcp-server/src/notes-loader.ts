@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { ClinicalNote } from "./types";
+import { ClinicalNote } from "./types.js";
 
 export function listNoteFiles(root: string): string[] {
   return fs

@@ -7,7 +7,7 @@ import {
   registerValidateClinicalNote,
   registerSearchNotes,
   registerExtractSection,
-} from "./tools";
+} from "./tools/index.js";
 
 const notesRootRaw = process.env["CLINICAL_NOTES_ROOT"];
 if (!notesRootRaw) {

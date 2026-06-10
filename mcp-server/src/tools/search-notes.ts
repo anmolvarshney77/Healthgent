@@ -1,8 +1,8 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp";
 import { z } from "zod";
-import { loadAllNotes } from "../notes-loader";
-import { ClinicalNote } from "../types";
-import { jsonResponse, textResponse } from "../utils";
+import { loadAllNotes } from "../notes-loader.js";
+import { ClinicalNote } from "../types.js";
+import { jsonResponse, textResponse } from "../utils.js";
 
 function matchesFilters(
   note: ClinicalNote,

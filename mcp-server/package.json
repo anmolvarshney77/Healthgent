@@ -2,6 +2,7 @@
   "name": "healthgent-mcp-server",
   "version": "1.0.0",
   "description": "Local-file MCP server for Healthgent clinical notes",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "dev": "npx tsx src/index.ts",

@@ -1,6 +1,6 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp";
-import { listNoteFiles } from "../notes-loader";
-import { jsonResponse, textResponse } from "../utils";
+import { listNoteFiles } from "../notes-loader.js";
+import { jsonResponse, textResponse } from "../utils.js";
 
 export function registerListClinicalNotes(server: McpServer, root: string) {
   server.registerTool(

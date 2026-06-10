@@ -1,5 +1,5 @@
-export { registerListClinicalNotes } from "./list-clinical-notes";
-export { registerGetClinicalNote } from "./get-clinical-note";
-export { registerValidateClinicalNote } from "./validate-clinical-note";
-export { registerSearchNotes } from "./search-notes";
-export { registerExtractSection } from "./extract-section";
+export { registerListClinicalNotes } from "./list-clinical-notes.js";
+export { registerGetClinicalNote } from "./get-clinical-note.js";
+export { registerValidateClinicalNote } from "./validate-clinical-note.js";
+export { registerSearchNotes } from "./search-notes.js";
+export { registerExtractSection } from "./extract-section.js";

@@ -1,8 +1,8 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp";
 import { z } from "zod";
-import { REQUIRED_KEYS } from "../types";
-import { resolveNote } from "../notes-loader";
-import { jsonResponse, textResponse } from "../utils";
+import { REQUIRED_KEYS } from "../types.js";
+import { resolveNote } from "../notes-loader.js";
+import { jsonResponse, textResponse } from "../utils.js";
 
 export function registerValidateClinicalNote(server: McpServer, root: string) {
   server.registerTool(
