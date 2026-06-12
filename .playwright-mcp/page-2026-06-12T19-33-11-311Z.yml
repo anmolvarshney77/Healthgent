@@ -1,0 +1,219 @@
+- generic [active] [ref=e1]:
+  - complementary [ref=e2]:
+    - generic [ref=e3]:
+      - img [ref=e5]
+      - generic [ref=e8]:
+        - generic [ref=e9]: HealthGent
+        - generic [ref=e10]: Agentic Healthcare OS
+    - navigation [ref=e11]:
+      - generic [ref=e12]: Main Menu
+      - list [ref=e13]:
+        - listitem [ref=e14]:
+          - link "Dashboard" [ref=e15] [cursor=pointer]:
+            - /url: /
+            - img [ref=e16]
+            - generic [ref=e21]: Dashboard
+        - listitem [ref=e22]:
+          - link "Patients" [ref=e23] [cursor=pointer]:
+            - /url: /patients
+            - img [ref=e24]
+            - generic [ref=e29]: Patients
+        - listitem [ref=e30]:
+          - link "Clinical Notes" [ref=e31] [cursor=pointer]:
+            - /url: /clinical-notes
+            - img [ref=e32]
+            - generic [ref=e35]: Clinical Notes
+        - listitem [ref=e36]:
+          - link "Vitals & Monitoring" [ref=e37] [cursor=pointer]:
+            - /url: /vitals
+            - img [ref=e38]
+            - generic [ref=e40]: Vitals & Monitoring
+        - listitem [ref=e41]:
+          - link "Prescriptions" [ref=e42] [cursor=pointer]:
+            - /url: /prescriptions
+            - img [ref=e44]
+            - generic [ref=e47]: Prescriptions
+            - img [ref=e48]
+        - listitem [ref=e50]:
+          - link "Diet Plans" [ref=e51] [cursor=pointer]:
+            - /url: /diet-plans
+            - img [ref=e52]
+            - generic [ref=e57]: Diet Plans
+      - generic [ref=e58]: System
+      - list [ref=e59]:
+        - listitem [ref=e60]:
+          - link "Settings" [ref=e61] [cursor=pointer]:
+            - /url: /settings
+            - img [ref=e62]
+            - generic [ref=e65]: Settings
+    - generic [ref=e67]:
+      - generic [ref=e68]: HG
+      - generic [ref=e69]:
+        - generic [ref=e70]: HealthGent Admin
+        - generic [ref=e71]: v1.0.0
+  - generic [ref=e73]:
+    - banner [ref=e74]:
+      - generic [ref=e75]:
+        - heading "Prescriptions" [level=1] [ref=e76]
+        - paragraph [ref=e77]: 6 active · 3 inactive
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - img [ref=e80]
+          - textbox "Search patients, notes..." [ref=e83]
+        - button [ref=e84]:
+          - img [ref=e85]
+        - generic [ref=e89]: DR
+    - main [ref=e90]:
+      - generic [ref=e91]:
+        - heading "Active Medications (6)" [level=2] [ref=e92]
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - img [ref=e96]
+            - generic [ref=e99]:
+              - generic [ref=e100]:
+                - generic [ref=e101]:
+                  - generic [ref=e102]: fluticasone propionate MDI
+                  - generic [ref=e103]: asthma controller
+                - generic [ref=e104]: active dose change
+              - generic [ref=e105]:
+                - generic [ref=e106]: "Dose: per weight-based guideline — clinic adjusted upward"
+                - generic [ref=e107]: inhaled
+                - generic [ref=e108]: BID
+              - link "Grover559 Keeling57" [ref=e109] [cursor=pointer]:
+                - /url: /patients/Grover559_Keeling57
+                - text: Grover559 Keeling57
+                - img [ref=e110]
+          - generic [ref=e113]:
+            - img [ref=e115]
+            - generic [ref=e118]:
+              - generic [ref=e119]:
+                - generic [ref=e120]:
+                  - generic [ref=e121]: albuterol MDI
+                  - generic [ref=e122]: bronchospasm
+                - generic [ref=e123]: active
+              - generic [ref=e124]:
+                - generic [ref=e125]: "Dose: 2 puffs"
+                - generic [ref=e126]: inhaled
+                - generic [ref=e127]: PRN
+              - link "Grover559 Keeling57" [ref=e128] [cursor=pointer]:
+                - /url: /patients/Grover559_Keeling57
+                - text: Grover559 Keeling57
+                - img [ref=e129]
+          - generic [ref=e132]:
+            - img [ref=e134]
+            - generic [ref=e137]:
+              - generic [ref=e138]:
+                - generic [ref=e139]:
+                  - generic [ref=e140]: cetirizine
+                  - generic [ref=e141]: allergic rhinitis
+                - generic [ref=e142]: active
+              - generic [ref=e143]:
+                - generic [ref=e144]: "Dose: 10 mg"
+                - generic [ref=e145]: PO
+                - generic [ref=e146]: daily PRN
+              - link "Grover559 Keeling57" [ref=e147] [cursor=pointer]:
+                - /url: /patients/Grover559_Keeling57
+                - text: Grover559 Keeling57
+                - img [ref=e148]
+          - generic [ref=e151]:
+            - img [ref=e153]
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - generic [ref=e158]:
+                  - generic [ref=e159]: lisinopril
+                  - generic [ref=e160]: hypertension
+                - generic [ref=e161]: active
+              - generic [ref=e162]:
+                - generic [ref=e163]: "Dose: 10 mg"
+                - generic [ref=e164]: PO
+                - generic [ref=e165]: daily
+              - link "Lincoln623 Bednar518" [ref=e166] [cursor=pointer]:
+                - /url: /patients/Lincoln623_Bednar518
+                - text: Lincoln623 Bednar518
+                - img [ref=e167]
+          - generic [ref=e170]:
+            - img [ref=e172]
+            - generic [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e177]:
+                  - generic [ref=e178]: metformin
+                  - generic [ref=e179]: type 2 diabetes
+                - generic [ref=e180]: active
+              - generic [ref=e181]:
+                - generic [ref=e182]: "Dose: 1000 mg"
+                - generic [ref=e183]: PO
+                - generic [ref=e184]: BID
+              - link "Tamera164 Wisozk929" [ref=e185] [cursor=pointer]:
+                - /url: /patients/Tamera164_Wisozk929
+                - text: Tamera164 Wisozk929
+                - img [ref=e186]
+          - generic [ref=e189]:
+            - img [ref=e191]
+            - generic [ref=e194]:
+              - generic [ref=e195]:
+                - generic [ref=e196]:
+                  - generic [ref=e197]: atorvastatin
+                  - generic [ref=e198]: dyslipidemia
+                - generic [ref=e199]: active
+              - generic [ref=e200]:
+                - generic [ref=e201]: "Dose: 40 mg"
+                - generic [ref=e202]: PO
+                - generic [ref=e203]: daily
+              - link "Tamera164 Wisozk929" [ref=e204] [cursor=pointer]:
+                - /url: /patients/Tamera164_Wisozk929
+                - text: Tamera164 Wisozk929
+                - img [ref=e205]
+      - generic [ref=e208]:
+        - heading "Inactive / Completed (3)" [level=2] [ref=e209]
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - img [ref=e213]
+            - generic [ref=e216]:
+              - generic [ref=e217]:
+                - generic [ref=e218]:
+                  - generic [ref=e219]: ibuprofen
+                  - generic [ref=e220]: pain/inflammation ankle sprain
+                - generic [ref=e221]: short course
+              - generic [ref=e222]:
+                - generic [ref=e223]: "Dose: per pediatric dosing calculator weight-based"
+                - generic [ref=e224]: PO
+                - generic [ref=e225]: every 8 hours with food x 3-5 days
+              - link "Jimmie93 Waelchi213" [ref=e226] [cursor=pointer]:
+                - /url: /patients/Jimmie93_Waelchi213
+                - text: Jimmie93 Waelchi213
+                - img [ref=e227]
+          - generic [ref=e230]:
+            - img [ref=e232]
+            - generic [ref=e235]:
+              - generic [ref=e236]:
+                - generic [ref=e237]:
+                  - generic [ref=e238]: sertraline
+                  - generic [ref=e239]: anxiety/depression
+                - generic [ref=e240]: new
+              - generic [ref=e241]:
+                - generic [ref=e242]: "Dose: 25 mg daily x 7 days then 50 mg daily"
+                - generic [ref=e243]: PO
+                - generic [ref=e244]: daily
+              - link "Lane844 Carroll471" [ref=e245] [cursor=pointer]:
+                - /url: /patients/Lane844_Carroll471
+                - text: Lane844 Carroll471
+                - img [ref=e246]
+          - generic [ref=e249]:
+            - img [ref=e251]
+            - generic [ref=e254]:
+              - generic [ref=e255]:
+                - generic [ref=e256]:
+                  - generic [ref=e257]: empagliflozin
+                  - generic [ref=e258]: type 2 diabetes / cardiorenal risk reduction
+                - generic [ref=e259]: new
+              - generic [ref=e260]:
+                - generic [ref=e261]: "Dose: 10 mg"
+                - generic [ref=e262]: PO
+                - generic [ref=e263]: daily
+              - link "Tamera164 Wisozk929" [ref=e264] [cursor=pointer]:
+                - /url: /patients/Tamera164_Wisozk929
+                - text: Tamera164 Wisozk929
+                - img [ref=e265]
+  - button "Open Next.js Dev Tools" [ref=e273] [cursor=pointer]:
+    - img [ref=e274]
+  - alert [ref=e277]

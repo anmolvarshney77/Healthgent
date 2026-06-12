@@ -1,0 +1,77 @@
+- generic [active] [ref=e1]:
+  - complementary [ref=e2]:
+    - generic [ref=e3]:
+      - img [ref=e5]
+      - generic [ref=e8]:
+        - generic [ref=e9]: HealthGent
+        - generic [ref=e10]: Agentic Healthcare OS
+    - navigation [ref=e11]:
+      - generic [ref=e12]: Main Menu
+      - list [ref=e13]:
+        - listitem [ref=e14]:
+          - link "Dashboard" [ref=e15] [cursor=pointer]:
+            - /url: /
+            - img [ref=e16]
+            - generic [ref=e21]: Dashboard
+        - listitem [ref=e22]:
+          - link "Patients" [ref=e23] [cursor=pointer]:
+            - /url: /patients
+            - img [ref=e25]
+            - generic [ref=e30]: Patients
+            - img [ref=e31]
+        - listitem [ref=e33]:
+          - link "Clinical Notes" [ref=e34] [cursor=pointer]:
+            - /url: /clinical-notes
+            - img [ref=e35]
+            - generic [ref=e38]: Clinical Notes
+        - listitem [ref=e39]:
+          - link "Vitals & Monitoring" [ref=e40] [cursor=pointer]:
+            - /url: /vitals
+            - img [ref=e41]
+            - generic [ref=e43]: Vitals & Monitoring
+        - listitem [ref=e44]:
+          - link "Prescriptions" [ref=e45] [cursor=pointer]:
+            - /url: /prescriptions
+            - img [ref=e46]
+            - generic [ref=e49]: Prescriptions
+        - listitem [ref=e50]:
+          - link "Diet Plans" [ref=e51] [cursor=pointer]:
+            - /url: /diet-plans
+            - img [ref=e52]
+            - generic [ref=e57]: Diet Plans
+      - generic [ref=e58]: System
+      - list [ref=e59]:
+        - listitem [ref=e60]:
+          - link "Settings" [ref=e61] [cursor=pointer]:
+            - /url: /settings
+            - img [ref=e62]
+            - generic [ref=e65]: Settings
+    - generic [ref=e67]:
+      - generic [ref=e68]: HG
+      - generic [ref=e69]:
+        - generic [ref=e70]: HealthGent Admin
+        - generic [ref=e71]: v1.0.0
+  - generic [ref=e73]:
+    - banner [ref=e74]:
+      - generic [ref=e75]:
+        - heading "Patients" [level=1] [ref=e76]
+        - paragraph [ref=e77]: 0 patients on record
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - img [ref=e80]
+          - textbox "Search patients, notes..." [ref=e83]
+        - button [ref=e84]:
+          - img [ref=e85]
+        - generic [ref=e89]: DR
+    - main [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]:
+          - img [ref=e93]
+          - textbox "Search by name, MRN, department..." [ref=e96]
+        - button "Filter" [ref=e97]:
+          - img [ref=e98]
+          - text: Filter
+      - generic [ref=e100]: Loading patients...
+  - button "Open Next.js Dev Tools" [ref=e106] [cursor=pointer]:
+    - img [ref=e107]
+  - alert [ref=e110]
