@@ -3,6 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "npm run build --prefix ui",
+    "dev": "npm run dev --prefix ui",
+    "start": "npm run start --prefix ui",
     "kb-pdf": "node scripts/export-kb-pdf.mjs"
   },
   "devDependencies": {
