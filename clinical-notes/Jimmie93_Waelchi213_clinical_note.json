@@ -17,7 +17,7 @@
     "dateTime": "2026-05-09T16:30:00-07:00",
     "type": "office_visit",
     "setting": "pediatric_primary_care",
-    "chiefComplaint": "Right ankle injury during soccer — swelling and difficulty bearing weight",
+    "chiefComplaint": "Right ankle injury during soccer \u2014 swelling and difficulty bearing weight",
     "provider": {
       "name": "Dr. Sample Provider",
       "department": "Pediatrics"
@@ -26,7 +26,7 @@
   },
   "clinicalNote": {
     "subjective": "11-year-old male presents with right ankle injury sustained during soccer. Reports swelling and difficulty bearing weight. No prior ankle injuries. Guardian present.",
-    "objective": "HR 84 bpm, RR 18, Temp 36.7°C, SpO2 99%. Weight 38.5 kg, Height 148 cm. Right ankle: lateral swelling, tenderness over ATFL, no fibula point tenderness. Ottawa ankle rules negative for fracture. X-ray right ankle: no acute fracture or dislocation.",
+    "objective": "HR 84 bpm, RR 18, Temp 36.7\u00b0C, SpO2 99%. Weight 38.5 kg, Height 148 cm. Right ankle: lateral swelling, tenderness over ATFL, no fibula point tenderness. Ottawa ankle rules negative for fracture. X-ray right ankle: no acute fracture or dislocation.",
     "assessment": [
       {
         "problem": "Right lateral ankle sprain (grade likely 1-2)",
@@ -34,12 +34,16 @@
         "icd10": "S93.401A"
       }
     ],
-    "plan": "X-ray right ankle — no fracture. PRICE, ace wrap, crutches partial weight-bearing as tolerated 48-72h then gradual return. NSAIDs as above. Home exercises handout for ROM beginning day 3-5 if improving. RTC if inability to bear weight after 5-7 days, numbness, or recurrent instability.",
+    "plan": "X-ray right ankle \u2014 no fracture. PRICE, ace wrap, crutches partial weight-bearing as tolerated 48-72h then gradual return. NSAIDs as above. Home exercises handout for ROM beginning day 3-5 if improving. RTC if inability to bear weight after 5-7 days, numbness, or recurrent instability.",
     "patientInstructions": "Avoid soccer until pain-free with normal gait and single-leg hop test cleared by clinician."
   },
   "structuredData": {
     "allergies": [
-      { "substance": "ibuprofen", "reaction": "GI upset only — tolerated with food", "severity": "mild" }
+      {
+        "substance": "ibuprofen",
+        "reaction": "GI upset only \u2014 tolerated with food",
+        "severity": "mild"
+      }
     ],
     "medications": [
       {
@@ -52,7 +56,11 @@
       }
     ],
     "conditions": [
-      { "name": "Sprain of right ankle, initial encounter", "icd10": "S93.401A", "clinicalStatus": "active" }
+      {
+        "name": "Sprain of right ankle, initial encounter",
+        "icd10": "S93.401A",
+        "clinicalStatus": "active"
+      }
     ],
     "vitals": {
       "heartRate": 84,
@@ -70,15 +78,72 @@
       }
     ],
     "referrals": [],
-    "screeningScores": []
+    "screeningScores": [],
+    "dietPlan": {
+      "dailyCalories": 2000,
+      "macros": {
+        "proteinG": 85,
+        "carbsG": 270,
+        "fatG": 60
+      },
+      "mealSchedule": [
+        {
+          "meal": "Breakfast",
+          "time": "07:30",
+          "foods": [
+            "Scrambled eggs",
+            "Whole wheat toast",
+            "Orange juice"
+          ],
+          "kcal": 450
+        },
+        {
+          "meal": "Lunch",
+          "time": "12:00",
+          "foods": [
+            "Grilled chicken wrap",
+            "Mixed greens salad",
+            "Milk"
+          ],
+          "kcal": 620
+        },
+        {
+          "meal": "Dinner",
+          "time": "18:30",
+          "foods": [
+            "Baked salmon",
+            "Sweet potato",
+            "Green beans"
+          ],
+          "kcal": 680
+        },
+        {
+          "meal": "Snack",
+          "time": "15:30",
+          "foods": [
+            "Peanut butter on apple slices",
+            "Low-fat yogurt"
+          ],
+          "kcal": 250
+        }
+      ],
+      "restrictions": [
+        "Avoid ibuprofen with food (GI sensitivity)",
+        "Limit high-sodium processed foods"
+      ],
+      "hydrationMl": 2000,
+      "notes": "High-protein diet to support tissue healing post ankle sprain. Standard pediatric macros (age 11)."
+    }
   },
   "agentContext": {
     "oneLineSummary": "11M acute lateral ankle sprain; XR negative; conservative management and RTP precautions documented.",
     "keyFactsForTools": [
-      "Growth plate injury risk — XR negative reduces fracture concern but clinical follow-up for persistent symptoms.",
-      "NSAID 'allergy' mild GI only — monitor tolerance; currently prescribed with food instructions.",
+      "Growth plate injury risk \u2014 XR negative reduces fracture concern but clinical follow-up for persistent symptoms.",
+      "NSAID 'allergy' mild GI only \u2014 monitor tolerance; currently prescribed with food instructions.",
       "Return-to-play criteria should reference pain-free gait and functional testing."
     ],
-    "safetyFlags": ["acute_musculoskeletal_injury_pediatric"]
+    "safetyFlags": [
+      "acute_musculoskeletal_injury_pediatric"
+    ]
   }
 }

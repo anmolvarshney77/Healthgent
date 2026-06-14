@@ -23,7 +23,7 @@
   },
   "clinicalNote": {
     "subjective": "Patient presents for blood pressure follow-up. Reports occasional exertional chest tightness. Home BP monitoring ongoing. No chest pain at rest, no syncope, no dyspnea at rest.",
-    "objective": "BP 128/80 mmHg, HR 72 bpm, RR 16, Temp 36.8°C, SpO2 98%. Weight 84.5 kg, Height 175 cm. Cardiovascular exam unremarkable. Lungs clear.",
+    "objective": "BP 128/80 mmHg, HR 72 bpm, RR 16, Temp 36.8\u00b0C, SpO2 98%. Weight 84.5 kg, Height 175 cm. Cardiovascular exam unremarkable. Lungs clear.",
     "assessment": [
       {
         "problem": "Essential hypertension",
@@ -31,7 +31,7 @@
         "icd10": "I10"
       },
       {
-        "problem": "Exertional chest discomfort — low clinical suspicion for ACS; exertional component warrants structured cardiovascular risk review",
+        "problem": "Exertional chest discomfort \u2014 low clinical suspicion for ACS; exertional component warrants structured cardiovascular risk review",
         "status": "active_evaluation",
         "icd10": "R07.89"
       },
@@ -46,7 +46,11 @@
   },
   "structuredData": {
     "allergies": [
-      { "substance": "NKDA", "reaction": "", "severity": "" }
+      {
+        "substance": "NKDA",
+        "reaction": "",
+        "severity": ""
+      }
     ],
     "medications": [
       {
@@ -59,8 +63,16 @@
       }
     ],
     "conditions": [
-      { "name": "Essential hypertension", "icd10": "I10", "clinicalStatus": "active" },
-      { "name": "Overweight", "icd10": "E66.3", "clinicalStatus": "active" }
+      {
+        "name": "Essential hypertension",
+        "icd10": "I10",
+        "clinicalStatus": "active"
+      },
+      {
+        "name": "Overweight",
+        "icd10": "E66.3",
+        "clinicalStatus": "active"
+      }
     ],
     "vitals": {
       "bloodPressureSystolic": 128,
@@ -72,21 +84,93 @@
     },
     "labs": [],
     "labsOrdered": [
-      { "test": "lipid_panel", "priority": "routine", "notes": "fasting" },
-      { "test": "hba1c", "priority": "routine", "notes": "" },
-      { "test": "bmp", "priority": "routine", "notes": "" }
+      {
+        "test": "lipid_panel",
+        "priority": "routine",
+        "notes": "fasting"
+      },
+      {
+        "test": "hba1c",
+        "priority": "routine",
+        "notes": ""
+      },
+      {
+        "test": "bmp",
+        "priority": "routine",
+        "notes": ""
+      }
     ],
     "imaging": [],
     "referrals": [],
-    "screeningScores": []
+    "screeningScores": [],
+    "dietPlan": {
+      "dailyCalories": 1900,
+      "macros": {
+        "proteinG": 95,
+        "carbsG": 220,
+        "fatG": 60
+      },
+      "mealSchedule": [
+        {
+          "meal": "Breakfast",
+          "time": "07:30",
+          "foods": [
+            "Overnight oats",
+            "Blueberries",
+            "Low-fat milk"
+          ],
+          "kcal": 420
+        },
+        {
+          "meal": "Lunch",
+          "time": "12:30",
+          "foods": [
+            "Grilled chicken salad",
+            "Whole grain crackers",
+            "Sparkling water"
+          ],
+          "kcal": 580
+        },
+        {
+          "meal": "Dinner",
+          "time": "18:30",
+          "foods": [
+            "Baked cod",
+            "Steamed brown rice",
+            "Roasted asparagus"
+          ],
+          "kcal": 650
+        },
+        {
+          "meal": "Snack",
+          "time": "15:00",
+          "foods": [
+            "Celery sticks with hummus",
+            "Unsalted almonds (small handful)"
+          ],
+          "kcal": 250
+        }
+      ],
+      "restrictions": [
+        "Low sodium (<1500 mg/day)",
+        "Low saturated fat",
+        "Limit red meat",
+        "Avoid added sugars",
+        "DASH diet principles"
+      ],
+      "hydrationMl": 2500,
+      "notes": "DASH-aligned diet to manage hypertension and support weight loss. Target 0.5 kg/week reduction."
+    }
   },
   "agentContext": {
     "oneLineSummary": "32M with controlled-stage hypertension on ACE-I reporting rare exertional chest tightness; CV risk workup planned.",
     "keyFactsForTools": [
-      "ACE inhibitor therapy active — watch hyperkalemia/renal function with BMP.",
-      "Exertional chest symptoms present — exclude ACS red flags; document tolerance and triggers.",
-      "Home BP monitoring requested — aggregate averages for medication titration decisions."
+      "ACE inhibitor therapy active \u2014 watch hyperkalemia/renal function with BMP.",
+      "Exertional chest symptoms present \u2014 exclude ACS red flags; document tolerance and triggers.",
+      "Home BP monitoring requested \u2014 aggregate averages for medication titration decisions."
     ],
-    "safetyFlags": ["chest_discomfort_exertional"]
+    "safetyFlags": [
+      "chest_discomfort_exertional"
+    ]
   }
 }

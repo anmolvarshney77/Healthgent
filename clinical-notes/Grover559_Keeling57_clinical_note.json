@@ -26,7 +26,7 @@
   },
   "clinicalNote": {
     "subjective": "12-year-old male with known moderate persistent asthma presents with increased nighttime cough and daytime symptoms during pollen season. Guardian reports worsening despite current controller therapy. Albuterol use increased to several times per week.",
-    "objective": "HR 92 bpm, RR 22, Temp 37.0°C, SpO2 97%. Weight 42.0 kg, Height 152 cm. Mild expiratory wheeze on auscultation. Peak flow pre-bronchodilator 82% personal best; post-albuterol 95%; bronchodilator response positive. Spacer technique reviewed.",
+    "objective": "HR 92 bpm, RR 22, Temp 37.0\u00b0C, SpO2 97%. Weight 42.0 kg, Height 152 cm. Mild expiratory wheeze on auscultation. Peak flow pre-bronchodilator 82% personal best; post-albuterol 95%; bronchodilator response positive. Spacer technique reviewed.",
     "assessment": [
       {
         "problem": "Asthma, persistent moderate",
@@ -44,13 +44,21 @@
   },
   "structuredData": {
     "allergies": [
-      { "substance": "environmental_pollen", "reaction": "respiratory_exacerbation", "severity": "moderate" },
-      { "substance": "NKFA", "reaction": "", "severity": "" }
+      {
+        "substance": "environmental_pollen",
+        "reaction": "respiratory_exacerbation",
+        "severity": "moderate"
+      },
+      {
+        "substance": "NKFA",
+        "reaction": "",
+        "severity": ""
+      }
     ],
     "medications": [
       {
         "name": "fluticasone propionate MDI",
-        "dose": "per weight-based guideline — clinic adjusted upward",
+        "dose": "per weight-based guideline \u2014 clinic adjusted upward",
         "route": "inhaled",
         "frequency": "BID",
         "status": "active_dose_change",
@@ -74,8 +82,16 @@
       }
     ],
     "conditions": [
-      { "name": "Moderate persistent asthma", "icd10": "J45.40", "clinicalStatus": "active" },
-      { "name": "Seasonal allergic rhinitis", "icd10": "J30.2", "clinicalStatus": "active" }
+      {
+        "name": "Moderate persistent asthma",
+        "icd10": "J45.40",
+        "clinicalStatus": "active"
+      },
+      {
+        "name": "Seasonal allergic rhinitis",
+        "icd10": "J30.2",
+        "clinicalStatus": "active"
+      }
     ],
     "vitals": {
       "heartRate": 92,
@@ -87,15 +103,73 @@
     "labsOrdered": [],
     "imaging": [],
     "referrals": [],
-    "screeningScores": []
+    "screeningScores": [],
+    "dietPlan": {
+      "dailyCalories": 1800,
+      "macros": {
+        "proteinG": 70,
+        "carbsG": 250,
+        "fatG": 55
+      },
+      "mealSchedule": [
+        {
+          "meal": "Breakfast",
+          "time": "07:30",
+          "foods": [
+            "Whole grain cereal",
+            "Low-fat milk",
+            "Sliced banana"
+          ],
+          "kcal": 420
+        },
+        {
+          "meal": "Lunch",
+          "time": "12:00",
+          "foods": [
+            "Turkey sandwich on whole wheat",
+            "Apple slices",
+            "Low-fat yogurt"
+          ],
+          "kcal": 580
+        },
+        {
+          "meal": "Dinner",
+          "time": "18:30",
+          "foods": [
+            "Baked chicken breast",
+            "Brown rice",
+            "Steamed broccoli"
+          ],
+          "kcal": 600
+        },
+        {
+          "meal": "Snack",
+          "time": "15:30",
+          "foods": [
+            "Hummus with carrot sticks",
+            "Orange juice"
+          ],
+          "kcal": 200
+        }
+      ],
+      "restrictions": [
+        "Avoid known allergens (seasonal pollen cross-reactants)",
+        "Limit processed sugars",
+        "Avoid sulfites (asthma trigger)"
+      ],
+      "hydrationMl": 1800,
+      "notes": "Anti-inflammatory diet to support respiratory health. Adequate calories for growth (age 12)."
+    }
   },
   "agentContext": {
     "oneLineSummary": "12M asthma moderate persistent with seasonal worsening; ICS intensified, bronchodilator response documented.",
     "keyFactsForTools": [
-      "Peak flow monitoring requested — parse trends for control assessment.",
-      "School action plan present — surface emergency thresholds when relevant.",
-      "Steroid inhaler dose changed — verify pediatric dosing bounds vs weight."
+      "Peak flow monitoring requested \u2014 parse trends for control assessment.",
+      "School action plan present \u2014 surface emergency thresholds when relevant.",
+      "Steroid inhaler dose changed \u2014 verify pediatric dosing bounds vs weight."
     ],
-    "safetyFlags": ["pediatric_respiratory_condition"]
+    "safetyFlags": [
+      "pediatric_respiratory_condition"
+    ]
   }
 }

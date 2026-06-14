@@ -23,7 +23,7 @@
   },
   "clinicalNote": {
     "subjective": "18-year-old male presents with new-onset anxiety symptoms affecting sleep and concentration before finals. Reports increased worry, difficulty sleeping, and low mood. Episodic cannabis use disclosed. Denies SI/HI.",
-    "objective": "BP 118/74 mmHg, HR 88 bpm, RR 16, Temp 36.9°C, SpO2 99%. Weight 68.0 kg, Height 175 cm. PHQ-9: 11 (moderate depression). GAD-7: 13 (moderate anxiety). SI/HI negative on structured assessment.",
+    "objective": "BP 118/74 mmHg, HR 88 bpm, RR 16, Temp 36.9\u00b0C, SpO2 99%. Weight 68.0 kg, Height 175 cm. PHQ-9: 11 (moderate depression). GAD-7: 13 (moderate anxiety). SI/HI negative on structured assessment.",
     "assessment": [
       {
         "problem": "Generalized anxiety disorder",
@@ -46,7 +46,11 @@
   },
   "structuredData": {
     "allergies": [
-      { "substance": "NKDA", "reaction": "", "severity": "" }
+      {
+        "substance": "NKDA",
+        "reaction": "",
+        "severity": ""
+      }
     ],
     "medications": [
       {
@@ -59,9 +63,21 @@
       }
     ],
     "conditions": [
-      { "name": "Generalized anxiety disorder", "icd10": "F41.1", "clinicalStatus": "active" },
-      { "name": "Major depressive disorder, moderate", "icd10": "F32.1", "clinicalStatus": "active" },
-      { "name": "Cannabis use disorder mild (under evaluation)", "icd10": "F12.10", "clinicalStatus": "active" }
+      {
+        "name": "Generalized anxiety disorder",
+        "icd10": "F41.1",
+        "clinicalStatus": "active"
+      },
+      {
+        "name": "Major depressive disorder, moderate",
+        "icd10": "F32.1",
+        "clinicalStatus": "active"
+      },
+      {
+        "name": "Cannabis use disorder mild (under evaluation)",
+        "icd10": "F12.10",
+        "clinicalStatus": "active"
+      }
     ],
     "vitals": {
       "bloodPressureSystolic": 118,
@@ -75,20 +91,91 @@
     "labsOrdered": [],
     "imaging": [],
     "referrals": [
-      { "type": "behavioral_health", "reason": "CBT", "urgency": "routine" }
+      {
+        "type": "behavioral_health",
+        "reason": "CBT",
+        "urgency": "routine"
+      }
     ],
     "screeningScores": [
-      { "instrument": "PHQ-9", "score": 11, "date": "2026-05-07" },
-      { "instrument": "GAD-7", "score": 13, "date": "2026-05-07" }
-    ]
+      {
+        "instrument": "PHQ-9",
+        "score": 11,
+        "date": "2026-05-07"
+      },
+      {
+        "instrument": "GAD-7",
+        "score": 13,
+        "date": "2026-05-07"
+      }
+    ],
+    "dietPlan": {
+      "dailyCalories": 2100,
+      "macros": {
+        "proteinG": 90,
+        "carbsG": 260,
+        "fatG": 70
+      },
+      "mealSchedule": [
+        {
+          "meal": "Breakfast",
+          "time": "08:00",
+          "foods": [
+            "Oatmeal with berries",
+            "Walnuts",
+            "Green tea"
+          ],
+          "kcal": 480
+        },
+        {
+          "meal": "Lunch",
+          "time": "13:00",
+          "foods": [
+            "Lentil soup",
+            "Whole grain bread",
+            "Mixed fruit"
+          ],
+          "kcal": 620
+        },
+        {
+          "meal": "Dinner",
+          "time": "19:00",
+          "foods": [
+            "Grilled salmon",
+            "Quinoa",
+            "Roasted vegetables"
+          ],
+          "kcal": 720
+        },
+        {
+          "meal": "Snack",
+          "time": "15:30",
+          "foods": [
+            "Dark chocolate (1 oz)",
+            "Almonds",
+            "Herbal tea"
+          ],
+          "kcal": 280
+        }
+      ],
+      "restrictions": [
+        "Limit caffeine (anxiety exacerbation)",
+        "Avoid alcohol",
+        "Limit refined sugars and ultra-processed foods"
+      ],
+      "hydrationMl": 2200,
+      "notes": "Mood-supportive diet rich in omega-3s, magnesium, and complex carbohydrates. Avoids substances that worsen anxiety or depression."
+    }
   },
   "agentContext": {
     "oneLineSummary": "18M with moderate depression/anxiety on new SSRI; substance use and caffeine counseling documented.",
     "keyFactsForTools": [
-      "SI/HI negative today — repeat safety assessment at follow-up.",
+      "SI/HI negative today \u2014 repeat safety assessment at follow-up.",
       "Drug interaction check: sertraline + THC/alcohol sedation risk.",
       "Track PHQ-9/GAD-7 trend for dose adjustments."
     ],
-    "safetyFlags": ["behavioral_health_follow_up_required"]
+    "safetyFlags": [
+      "behavioral_health_follow_up_required"
+    ]
   }
 }
