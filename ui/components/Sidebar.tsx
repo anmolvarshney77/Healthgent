@@ -12,6 +12,7 @@ import {
   Settings,
   HeartPulse,
   ChevronRight,
+  Bot,
 } from "lucide-react";
 
 const navItems = [
@@ -21,6 +22,7 @@ const navItems = [
   { href: "/vitals", icon: Activity, label: "Vitals & Monitoring" },
   { href: "/prescriptions", icon: Pill, label: "Prescriptions" },
   { href: "/diet-plans", icon: Salad, label: "Diet Plans" },
+  { href: "/agent", icon: Bot, label: "AI Agent" },
 ];
 
 const secondaryItems = [
