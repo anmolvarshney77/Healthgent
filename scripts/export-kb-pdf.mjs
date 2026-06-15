@@ -1,8 +1,4 @@
-#!/usr/bin/env node
-/**
- * Fast KB export: local md-to-pdf (cached Puppeteer), concurrent workers.
- * Usage: npm install && npm run kb-pdf
- */
+
 import { mkdirSync, readdirSync, unlinkSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';

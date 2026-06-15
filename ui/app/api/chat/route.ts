@@ -5,6 +5,7 @@ import path from "path";
 const NOTES_DIR = path.resolve(process.cwd(), "../clinical-notes");
 const LYZR_API_KEY = process.env.LYZR_API_KEY!;
 const LYZR_AGENT_ID = process.env.LYZR_AGENT_ID!;
+const LYZR_BASE_URL = process.env.LYZR_BASE_URL ?? "https://agent-prod.studio.lyzr.ai";
 
 function loadPatientContext(patientId: string): string {
   try {
@@ -42,7 +43,7 @@ export async function POST(req: NextRequest) {
   const context = patientId ? loadPatientContext(patientId) : "";
   const fullMessage = context ? `${context}\n\nQuestion: ${message}` : message;
 
-  const lyzrRes = await fetch("https://agent.api.lyzr.app/v3/inference/chat/", {
+  const lyzrRes = await fetch(`${LYZR_BASE_URL}/v3/inference/chat/`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

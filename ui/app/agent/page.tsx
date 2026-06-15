@@ -16,6 +16,20 @@ interface Message {
   content: string;
 }
 
+function stripMarkdown(text: string): string {
+  return text
+    .replace(/\*\*(.+?)\*\*/g, "$1")   // **bold**
+    .replace(/\*(.+?)\*/g, "$1")        // *italic*
+    .replace(/`(.+?)`/g, "$1")          // `code`
+    .replace(/#+\s+/g, "")              // # headings
+    .replace(/\[(.+?)\]\(.+?\)/g, "$1") // [link](url)
+    .replace(/^\s*[-*]\s+/gm, "• ")     // bullet lists
+    .replace(/\|[-:| ]+\|/g, "")        // table separators
+    .replace(/\|/g, " ")                // table pipes
+    .replace(/---+/g, "—")              // horizontal rules
+    .trim();
+}
+
 const SUGGESTED_QUESTIONS = [
   "What medications is this patient currently on?",
   "Summarize this patient's chief complaint and diagnosis.",
@@ -162,7 +176,7 @@ export default function AgentPage() {
                     ? { background: "#3b82f6", color: "#fff", borderBottomRightRadius: "6px" }
                     : { background: "#fff", color: "#1e293b", borderBottomLeftRadius: "6px" }}
                 >
-                  {msg.content}
+                  {msg.role === "assistant" ? stripMarkdown(msg.content) : msg.content}
                 </div>
                 {msg.role === "user" && (
                   <div className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5" style={{ background: "#3b82f6" }}>
