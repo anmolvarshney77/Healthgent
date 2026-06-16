@@ -70,11 +70,8 @@ export default function Sidebar() {
               <li key={href}>
                 <Link
                   href={href}
-                  className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all group relative"
-                  style={{
-                    background: active ? "rgba(59,130,246,0.15)" : "transparent",
-                    color: active ? "#93c5fd" : "#94a3b8",
-                  }}
+                  className={`flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all group relative ${active ? "bg-blue-500/15" : "hover:bg-white/5"}`}
+                  style={{ color: active ? "#93c5fd" : "#94a3b8" }}
                 >
                   {active && (
                     <span

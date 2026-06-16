@@ -27,11 +27,16 @@ export default function TopBar({ title, subtitle }: TopBarProps) {
           <Bell size={18} className="text-slate-500" />
           <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-blue-500" />
         </button>
-        <div
-          className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold"
-          style={{ background: "linear-gradient(135deg, #3b82f6, #06b6d4)" }}
-        >
-          DR
+        <div className="relative group">
+          <div
+            className="w-8 h-8 rounded-full flex items-center justify-center text-white text-xs font-bold cursor-pointer"
+            style={{ background: "linear-gradient(135deg, #3b82f6, #06b6d4)" }}
+          >
+            DR
+          </div>
+          <div className="absolute right-0 top-10 hidden group-hover:block bg-slate-800 text-white text-xs rounded-lg px-3 py-1.5 whitespace-nowrap shadow-lg">
+            Dr. Rahul Mehta
+          </div>
         </div>
       </div>
     </header>
