@@ -1,4 +1,3 @@
-//exportkbpdf.mjs
 import { mkdirSync, readdirSync, unlinkSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -11,7 +10,7 @@ const pdfOptions = {
   format: 'Letter',
   margin: { top: '12mm', bottom: '12mm', left: '14mm', right: '14mm' },
 };
-
+//Ok
 const concurrency = Math.max(1, Math.min(7, Number(process.env.KB_PDF_CONCURRENCY ?? '3')));
 
 function collectJobs() {
