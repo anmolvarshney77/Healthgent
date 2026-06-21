@@ -10,7 +10,7 @@ const pdfOptions = {
   format: 'Letter',
   margin: { top: '12mm', bottom: '12mm', left: '14mm', right: '14mm' },
 };
-//Ok
+//Nothing above 7 since we don't want to OOM the system. The default is 3 since that's a good balance for typical systems.  
 const concurrency = Math.max(1, Math.min(7, Number(process.env.KB_PDF_CONCURRENCY ?? '3')));
 
 function collectJobs() {
