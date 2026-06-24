@@ -1,3 +1,4 @@
+//Reactivate the MCP server for healthgent clinical notes
 import path from "path";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio";
